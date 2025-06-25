@@ -1,0 +1,777 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@700&family=Inter:wght@400;600&family=Now:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Now:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+body {
+  margin: 0;
+  background-color: #f8f0fc;
+  color: #333;
+}
+
+main {
+  background-color: rgb(225, 216, 255);
+  padding: 30px 20px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1000px; /* max-width: 1200px; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1.text-4xl {
+  text-shadow: 2px 2px 0 #222;
+  font-family: "Antonio", "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+h2.text-2xl {
+  color: #333;
+  font-family: "Now", "Inter", sans-serif;
+}
+
+h3.text-xl {
+  text-align: center;
+  font-weight: bold;
+}
+
+.h2-image2 {
+  text-align: center;
+  font-family: "Antonio", "Inter", sans-serif;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 5px;
+}
+.text-image2 {
+  font-family: "Antonio", "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-grafic {
+  font-family: "Now", "Inter", sans-serif;
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-family: "Antonio", "Inter", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.header-bg {
+  /*a parte de cima q tinha a faixa roxa agr n tem mais*/
+  /* background-color: #bb80ff;  Deep purple from PDF */
+  color: rgb(161, 2, 253);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.section-title {
+  color: rgb(161, 2, 253);
+  /* Slightly lighter deep purple */
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  text-align: center; /* Centraliza o texto */
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.barChart {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.content-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  min-width: 250px;
+  border: 2px solid #9900ff; /* Adicionando borda */
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.content-image-1 {
+  text-align: center;
+}
+
+.content-image-1,
+.content-image-2,
+.content-image-3,
+.content-image-5 {
+  border: none;
+}
+
+.section-no-mercy {
+  border: 2px solid #9900ff; /* Adicionando borda */
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.content-image-1 {
+  border: 2px solid #9900ff; /* Adicionando borda */
+}
+
+.coments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-placeholder {
+  background-color: #c084f5;
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  border: 2px solid #9900ff;
+  overflow: hidden;
+  min-height: 150px;
+
+
+}
+
+/* N SEI, MAS FUNCIONA*/
+          .column.content-image-3.coments {
+          flex: none; 
+          width: 100%; 
+          max-width: 530px; 
+          }
+
+          .img-no-mency img {
+          width: 117%;   
+           height: auto;  
+          max-width: none; 
+          }
+
+          .img-no-mency img {
+          margin-top: 20px; /* empurra a imagem pra baixo */
+        }
+
+
+
+.image2 {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.img-no-mency {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  list-style-position: inside;
+  color: #333;
+  
+}
+
+.img-no-mency img {
+  border: 2px solid #9900ff; /* Adicionando borda */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.content-image-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.list {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 5px;
+}
+
+.arrow {
+  font-size: 30px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Estilo para a palavra 'cultura' roxa */
+.purple-text {
+  color: #800080; /* Cor roxa */
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-content h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #9900ff; /* Deep purple */
+}
+.modal-content p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.close-button {
+  font-size: 3em;
+  float: right;
+  color: red;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  color: darkred;
+}
+
+.section-denuncias {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.content-denuncias {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px;
+  list-style-position: inside;
+  margin-top: -10px;
+  align-items: flex-start;
+}
+
+.content-denuncias p {
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.div-esquerda {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  padding-top: -50px;
+}
+
+.div-direita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 30%;
+  list-style-position: inside;
+}
+
+.img-grafico-casos {
+  max-height: 300px;
+  min-height: 240px;
+}
+
+.seta {
+  flex-direction: row;
+  display: flex;
+  gap: 50px;
+  padding-left: 30px;
+  border: none;
+  margin-left: 20px;
+}
+.seta img {
+  transform: rotate(340deg);
+}
+
+.section-pais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.div-esquerda-pais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.div-esquerda-pais p {
+  font-size: 0.75em;
+  color: #333;
+  text-align: center;
+}
+
+.div-esquerda-pais .column {
+  border: none;
+}
+
+.div-esquerda-pais img {
+  width: 100%;
+  max-height: 400px;
+  min-height: 360px;
+}
+
+.div-direita-pais {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.div-direita-pais .column {
+  border: none;
+}
+
+.div-direita-pais .column img {
+  height: 100%;
+}
+
+.column-final {
+  padding: 10px;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #67317d;
+  color: white;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.nota {
+  font-size: 12px;
+  color: #555;
+  max-width: 700px;
+}
+
+.column-final-esquerda {
+  width: 30px;
+  padding: 10px;
+  border: none;
+}
+
+.column-final-direita {
+  width: 70%;
+}
+
+.chart-container {
+  width: 400px;
+  margin: auto;
+}
+
+.fonte {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+}
+
+.subtitulo2 {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.chart-container2 {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.subtitulo3 {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.chart-container3 {
+  width: 100%;
+  margin: auto;
+}
+
+.chart-container3 {
+  width: 100px;
+}
+
+.fonte3 {
+  margin-top: 20px;
+  font-size: 10px;
+  color: #555;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.legenda3 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.legenda-item3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8em;
+}
+
+.cor {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.cor1 {
+  background-color: #b39ddb;
+}
+.cor2 {
+  background-color: #7e57c2;
+}
+
+/* ESTILOS ESPECÍFICOS AQ PRA CONSERTAR */
+
+#hr-header {
+  width: 100%;
+  height: 2px;
+  background-color: #000; /* Deep purple */
+  border: none;
+  margin: 20px 0;
+}
+
+#titulo-evolucao-vitimas {
+  font-size: 1rem;
+}
+
+.legenda-grafico {
+  font-size: 0.5rem;
+}
+
+.numero-absoluto {
+  font-size: 13px;
+  color: #333;
+}
+
+#titulo-faixa-etaria {
+  font-size: 0.9rem;
+}
+
+.taxa-pais {
+  border: 2px solid #9900ff; /* Adicionando borda */
+  border-radius: 8px;
+  padding: 15px;
+}
+
+#graficoLinhaEstupro {
+  height: 300px;
+  display: block;
+    box-sizing: border-box;
+    height: 470px;
+}
+
+.text-image2 {
+  font-size: 11px; 
+}
+
+.taxa-pais img {
+  max-height: 500px;
+  width: auto; /* Ajusta a largura automaticamente para manter a proporção */
+}
+
+.text-gray-800 {
+  text-align: justify; /* Justifica o texto */
+}
+
+#grafico1 {
+  width: 400px !important;
+  height: 400px !important;
+}
+
+
+
+
+
+
+/* Layout exclusivo para a seção de gráficos */
+.graficos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.graficos-grid .column {
+  flex: 0 0 calc(50% - 10px);
+  box-sizing: border-box;
+}
+
+
+.grafico-donut {
+  width:0px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-button {
+  color: #7e22ce; /* roxo intenso */
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #a855f7; /* roxo claro ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === MODAL GERAL === */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escurecido */
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === CAIXA BRANCA CENTRAL === */
+.modal-content1 {
+  background-color: white;
+  padding: 30px; /* um pouco mais de espaço interno */
+  border-radius: 8px;
+  width: 95%; /* deixa quase a tela toda */
+  max-width: 1200px; /* aumenta o limite máximo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* === BOTÃO DE FECHAR === */
+.close-button {
+  color: #7e22ce;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 1001;
+}
+.close-button:hover {
+  color: #a855f7;
+}
+
+/* === CONTEÚDO INTERNO: IMAGEM + TEXTO === */
+.modal-content-agressao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* === IMAGEM === */
+.modal-img-agressao {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* === TEXTO AO LADO === */
+.modal-text-agressao {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+/* === FRASE DA ISABELA === */
+.modal-title-agressao {
+  background-color: #803ce7;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: justify;
+}
+
+.modal-content h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* === AUTORA === */
+.modal-author-agressao {
+  color: #4c1d95;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1em;
+  font-style: italic;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+/* === RESPONSIVIDADE PARA CELULARES === */
+@media (max-width: 768px) {
+  .modal-content-agressao {
+    flex-direction: column;
+  }
+
+  .modal-img-agressao,
+  .modal-text-agressao {
+    width: 100%;
+  }
+
+  .modal-text-agressao {
+    align-items: center;
+    text-align: center;
+  }
+
+  .modal-title-agressao,
+  .modal-author-agressao {
+    text-align: center;
+  }
+}
+
+
+#grafico5 {
+  height: 500px !important; /* aumenta a altura */
+  width: 100%; /* mantém a largura responsiva */
+}
