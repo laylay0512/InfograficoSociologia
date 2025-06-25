@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infográfico Modelo</title>
+  <link rel="stylesheet" href="./src/style/style.css">
+  <link rel="stylesheet" href="./src/style/QueryIndex.css">
+
+  <!-- Modal -->
+  <script src="./src/script/modal.js" defer></script>
+  <!-- grafico -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+<script src="./src/script/grafico1.js" defer></script>
+<script src="./src/script/grafico2.js" defer></script>
+<script src="./src/script/grafico4.js" defer></script>
+  <script src="./src/script/grafico5.js" defer></script>
+  <script src="./src/script/grafico6.js" defer></script>
+  <script src="./src/script/grafico7.js" defer></script>
+  <script src="./js/modal-mapa.js" defer></script>
+  <script src="./js/modal-grafico-linha.js" defer></script>
+  <script src="./js/modalgrafico.js" defer></script>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <script src="./src/script/grafico.js" defer></script>
+  <script src="./src/script/graficoBarras.js" defer></script>
+  <script src="./src/script/roscaFinal.js" defer></script>
+  <script src="./src/script/graficoRoscaEstupro.js" defer></script>
+  <script src="./src/script/graficoLinhaEstupro.js" defer></script>
+  <script src="./src/script/graficoSexoEstupro.js" defer></script>
+  <script src="./src/script/lostLifeModal.js" defer></script>
+
+
+
+  <!-- Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/now" rel="stylesheet">
+</head>
+<body>
+  <main class="container mx-auto px-7 py-8">
+      
+    <div class="section">
+        <section class="card">
+            <!-- Header Section -->
+            <header class="header-bg">
+                <div class="container mx-auto px-4">
+                  <h1 class="text-4xl font-bold mb-2">
+                    CULTURA DE ESTUPRO E VIOLÊNCIA SEXUAL
+                  </h1>
+                  <hr id="hr-header">
+                    <h2 class="text-2xl">
+                        O infográfico apresenta dados alarmantes sobre a violência sexual no Brasil,
+                        evidenciando como a <span id="cultura-link" class="purple-text" style="cursor:pointer; text-decoration: underline;">cultura</span> do estupro está
+                        enraizada socialmente.
+                    </h2>
+                </div>
+            </header>
+        </section>
+    </div>
+
+    <!-- Cultura Modal -->
+    <div id="culturaModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button" id="closeCulturaModal">&times;</span>
+            <h3 class="text-xl font-semibold mb-4">O que é "Cultura do Estupro"?</h3>
+            <p class="text-gray-800">
+                O termo "cultura do estupro" é utilizado para descrever práticas sociais naturalizadas que banalizam,
+                justificam ou toleram a violência sexual, tornando-a parte do cotidiano, e não um fato isolado. Segundo
+                Marilena Chaui (1986): "em sentido amplo, cultura [...] é o campo simbólico e material das atividades
+                humanas (p.14). [...]. A cultura do estupro está profundamente ligada ao machismo e à misoginia, que
+                reforçam comportamentos e discursos que perpetuam a violência contra a mulher. Trata-se, portanto, de um
+                problema estrutural, sustentado por valores e práticas culturais que incentivam, direta ou
+                indiretamente, esse tipo de violência. A cultura do estupro é um reflexo de uma sociedade machista e
+                misógina, na qual a violência sexual é naturalizada, sustentada e reproduzida por práticas culturais que
+                colocam a mulher em posição de subordinação e vulnerabilidade. (Sousa, 2017).
+            </p>
+        </div>
+    </div>
+
+    <!-- Lost Life Modal -->
+    <div id="lostLifeModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close-button" id="closelostLifeModal">&times;</span>
+            <h3 class="text-xl font-semibold mb-4">Lost Life</h3>
+            <div class="modal-image">
+                <img src="./images/lost-life-12jpeg.jpeg" alt="Lost Life Game" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+      
+    <!-- Seção 2: 2 colunas com imagem + texto -->
+    <div class="section section-izabely">
+      <div class="content-row">
+        <div class="column content-image-1">
+          <h1 class="text-2xl section-title ml-3">Dados Reais sobre Abuso Sexual Infantil no Brasil (2022)</h1>
+        
+
+            <!-- Gráfico de barras -->
+          <canvas id="barChart0" width="400" height="300"></canvas>
+
+
+          <p class="text text-grafic">Fonte: Anuário Brasileiro de Segurança Pública 2023 / TRT-MG</p>
+        </div>
+        <div class="column content-image-2">
+          <h2 class="h2-image2" style="color: rgb(161, 2, 253);" >Jogo: Lost life </h2>
+          <div class="image-placeholder"> <img src="./images/lost-life-1.jpeg" class="image2" alt="" style="width:530px; height: auto;"></div>
+  
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção 3: Imagem + texto com lista -->
+    <div class="section section-no-mercy">
+      <h2 class="text-2xl section-title"> "NO MERCY" E A BANALIZAÇÃO DA VIOLÊNCIA </h2>
+  
+      <div class="content-row">
+        <div class="column content-image-3 coments">
+          <div class="image-placeholder">
+            <img height="100%" width="100%" src="./images/no-mercy-game.png" alt="" >
+          </div>
+
+          <div class="image-placeholder">
+            <img height="100%" width="100%" src="./images/tiktok-comments.png" alt="">
+          </div>
+          <P>Fonte: Postagem no aplicativo TikTok, perfil “no mercy”</P>
+        </div>
+        
+
+        <!-- IMAGEM CLICÁVEL -->
+<div class="column content-image-5">
+  <div class="img-no-mency" id="abrirMapaModal">
+    <img width="100%" height="100%" src="./images/mapa-brasil-pequeno.png" alt="Mapa do Brasil">
+  </div>
+</div>
+
+
+
+<!-- MODAL QUE ABRE AO CLICAR NA IMAGEM -->
+<div id="mapaModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-button" id="closeMapaModal">&times;</span>
+    <h3 class="text-xl font-semibold mb-4">NO MERCY</h3>
+   <p class="text-gray-800">
+  O jogo "No Mercy" gerou enorme polêmica por permitir que jogadores encenem feminicídios, estupros e torturas, simulando agressões contra mulheres de forma explícita.<br>
+  Apesar do banimento, muitos usuários defenderam o jogo, ignorando seu impacto social e psicológico na cultura da violência de gênero.<br>
+  <br>
+  - Jogo custava 11,99 USD<br>
+  - Foi banido de países como o Reino Unido, Austrália, Portugal e Canadá
+</p>
+  </div>
+</div>
+      </div>
+    </div>
+
+
+
+    <!-- ENVOLVE A SEÇÃO QUE SERÁ CLICADA -->
+<div class="content-denuncias section-no-mercy" id="abrirGraficoLinhaModal">
+  <h2 id="titulo-evolucao-vitimas">Evolução do número de vítimas de estupros e estupros de vulnerável</h2>
+
+  <div class="chart-container4">
+    <canvas id="graficoLinhaEstupro"></canvas>
+  </div>
+
+  <p class="fonte legenda-grafico" style="font-size: 15px;">
+    <strong>Fonte:</strong> Anuário Brasileiro de Segurança Pública (2024)
+  </p>
+</div>
+
+<!-- MODAL QUE APARECE AO CLICAR -->
+<div id="graficoLinhaModal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-button" id="closeGraficoLinhaModal">&times;</span>
+    <h3 class="text-xl font-semibold mb-4">Análise do Gráfico de Linha</h3>
+    <p class="text-gray-800">
+      Em 2011, primeiro ano da série histórica do gráfico abaixo, 43.869 pessoas foram vítimas de estupro ou estupro de vulnerável no Brasil. Desde então, com crescimento quase ininterrupto ao longo dos anos, o país tem atingido novos recordes e, em um período de 13 anos, o crescimento do número de vítimas chegou a 91,5%.
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+<section class="content-row graficos-grid" id="secao-graficos-principais"> 
+  <div class="column">
+    <h3 class="text-xl">VÍTIMAS DE ESTUPRO POR RAÇA/COR NO BRASIL, 2023</h3>
+    <canvas id="grafico1"></canvas>
+    <p class="text-image2" style="font-size: 15px;">Fonte: Anuário Brasileiro de Segurança Pública (2024)</p>
+  </div>
+
+  <div class="column">
+    <h3 class="text-xl">VÍTIMAS DE ESTUPRO POR SEXO NO BRASIL, 2023</h3>
+    <canvas id="grafico2"></canvas>
+    <p class="text-image2" style="font-size: 15px;">Fonte: Anuário Brasileiro de Segurança Pública (2024)</p>
+  </div>
+
+  <div class="column">
+    <h3 class="text-xl">DISTRIBUIÇÃO DAS OCORRÊNCIAS DE ESTUPRO E ESTUPRO DE VULNERÁVEL NO BRASIL, 2023</h3>
+    <canvas id="grafico4"></canvas>
+    <p class="text-image2" style="font-size: 15px;">Fonte: Anuário Brasileiro de Segurança Pública (2024)</p>
+  </div>
+
+  <div class="column">
+    <canvas id="grafico5" width="400" height="300"></canvas>
+    <p class="text-image2" style="font-size: 15px;" >Fonte: Anuário Brasileiro de Segurança Pública (2024)</p>
+  </div>
+
+  
+  
+  
+  
+<div class="column">
+  <canvas id="grafico6" width="400" height="300"></canvas>
+  
+  <p class="text-image2" style="font-size: 15px; cursor: pointer;" id="abrirFonteGrafico6Modal">
+    Fonte: Anuário Brasileiro de Segurança Pública (2024)
+  </p>
+</div>
+
+<div id="fonteGrafico6IsabelaModal" class="modal" style="display: none;">
+  <div class="modal-content1">
+    <span class="close-button" id="closeFonteGrafico6IsabelaModal">&times;</span>
+    
+    <div class="modal-content-agressao">
+  <img src="./images/ultimo.jpg" alt="grafico" class="modal-img-agressao">
+  <div class="modal-text-agressao">
+    <h3 class="modal-title-agressao">
+      “Há a cultura que naturaliza a ideia de que a mulher tem obrigação de satisfazer o marido sexualmente, a dependência emocional ou econômica e a falta de uma rede que, além de receber a denúncia, ofereça apoio emocional e econômico para que essa mulher construa a sua vida longe da relação violenta”
+    </h3>
+    <p class="modal-author-agressao">- Isabela Del Monde</p>
+  </div>
+</div>
+
+
+    
+  </div>
+</div>
+  
+  
+  
+  
+  
+
+  <div class="column">
+    <canvas id="grafico7" width="400" height="300"></canvas>
+    <p class="text-image2" style="font-size: 15px;" >Fonte: Anuário Brasileiro de Segurança Pública (2024)</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  </div>
+  </div>
+  </main>
+</body>
+</html>
+  
