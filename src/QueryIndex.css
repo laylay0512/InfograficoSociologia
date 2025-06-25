@@ -1,0 +1,201 @@
+@media screen and (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+
+  h1.text-4xl {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px 0 #222;
+  }
+
+  .text {
+    font-size: 1em;
+  }
+
+  header.header-bg {
+    padding: 0;
+  }
+
+  .section {
+    padding: 5px;
+  }
+
+  .section-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .section p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .section-denuncias {
+    flex-direction: column;
+  }
+
+  .denuncias-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .div-esquerda {
+    width: 100%;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+
+  .div-direita {
+    width: 100%;
+  }
+
+  .seta {
+    gap: 15px;
+  }
+
+  .seta img {
+    transform: rotate(0deg);
+    width: 80px;
+    height: 90px;
+  }
+
+  .section-pais {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-esquerda-pais {
+    width: 100%;
+  }
+
+  .div-direita-pais {
+    width: 100%;
+  }
+
+  .div-direita-pais img {
+    min-height: 200px;
+  }
+
+  .section-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-final .content-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-final-esquerda {
+    width: 100%;
+  }
+
+  .column-final-direita {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+
+  h1.text-4xl {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px 0 #222;
+  }
+
+  .text {
+    font-size: 1em;
+  }
+
+  header.header-bg {
+    padding: 0;
+  }
+
+  .section {
+    padding: 5px;
+  }
+
+  .section-title {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+
+  .section p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .section-denuncias {
+    flex-direction: column;
+  }
+
+  .denuncias-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .div-esquerda {
+    width: 100%;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+
+  .div-direita {
+    width: 100%;
+  }
+
+  .seta {
+    gap: 15px;
+  }
+
+  .seta img {
+    transform: rotate(0deg);
+    width: 80px;
+    height: 90px;
+  }
+
+  .section-pais {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-esquerda-pais {
+    width: 100%;
+  }
+
+  .div-direita-pais {
+    width: 100%;
+  }
+
+  .div-direita-pais img {
+    min-height: 200px;
+  }
+
+  .section-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-final .content-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-final-esquerda {
+    width: 100%;
+  }
+
+  .column-final-direita {
+    width: 100%;
+  }
+}
+
+
+
